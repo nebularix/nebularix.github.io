@@ -1,0 +1,160 @@
+body {
+    background-image: url("tile.png");
+    background-repeat: repeat;
+    vertical-align: middle;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+@media only screen and (min-width: 768px) {
+
+    #devilsteak {
+        margin-top: 75px;
+        margin-left: 100px;
+        width: 100%;
+    }
+
+    #leftHandDeco {
+        width: 25%;
+    }
+
+    #centerContent {
+        width: 60%;
+    }
+
+    #nightmareLeft, #nightmareRight {
+        display: none;
+    }
+
+    #nightmareDown {
+        top: 350px;
+        right: 67%;
+        position: absolute;
+    }
+
+    #centerTextBox, #centerFooter {
+        width: 90%;
+        float: right;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #rightHandDeco {
+        width: 15%;
+    }
+
+    #headerImage {
+        margin-left: 20px;
+    }
+
+}
+
+#headerImage {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+td {
+    padding: 15px;
+}
+
+#gallery {
+    display: none;
+    padding: 15px;
+}
+
+#gallery img {
+    max-width: 100%;
+}
+
+#centerFooter {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+#galleryButton {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.col {
+    float: left;
+    padding: 15px;
+}
+
+#devilsteak {
+    box-shadow: 10px 10px;
+    position: relative;
+}
+
+#nightmare {
+    margin-top: 200px;
+    margin-left: -40px;
+}
+
+#centerTextBox {
+    background-color: #f3f6d0;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .col {
+        width: 100%;
+    }
+
+    #nightmareLeft, #nightmareRight {
+        position: absolute;
+        width: 152px;
+        height: 125px;
+    }
+
+    #nightmareLeft {
+        top: 15px;
+        left: 15px;
+    }
+
+    #nightmareRight {
+        z-index: -1;
+        top: 100px;
+        right: 20px;
+    }
+
+    #nightmareDown {
+        display: none;
+    }
+
+    #devilsteak {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -45px;
+        display: block;
+    }
+
+    #centerTextBox {
+        padding: 15px;
+    }
+
+    #rightHandDeco {
+        display: none;
+    }
+}
