@@ -1,4 +1,5 @@
 body {
+    background-color: black;
     background-image: url("tile.png");
     background-repeat: repeat;
     vertical-align: middle;
@@ -11,18 +12,34 @@ body {
 
 @media only screen and (min-width: 768px) {
 
-    #devilsteak {
-        margin-top: 75px;
-        margin-left: 100px;
-        width: 100%;
+    #devilsteakDesktop {
+        position: absolute;
+        width: 50%;
+        top: -60px;
+        right: 100%;
+        float: right;
+
+    }
+
+    #devilsteakMobile {
+        display: none;
     }
 
     #leftHandDeco {
         width: 25%;
     }
 
+    #mainContent {
+        position: relative;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
     #centerContent {
         width: 60%;
+        position: relative;
     }
 
     #nightmareLeft, #nightmareRight {
@@ -30,18 +47,17 @@ body {
     }
 
     #nightmareDown {
-        top: 350px;
-        right: 67%;
+        top: 280px;
+        right: 95%;
+        width: 152px;
+        height: 125px;
+        float: right;
         position: absolute;
     }
 
     #centerTextBox, #centerFooter {
         width: 90%;
         float: right;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding-left: 40px;
-        padding-right: 40px;
     }
 
     #rightHandDeco {
@@ -52,9 +68,19 @@ body {
         margin-left: 20px;
     }
 
+    #galleryTable .col {
+        width: 33%;
+    }
+
 }
 
 #headerImage {
+    width: 100%;
+}
+
+#galleryTable {
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
 }
 
@@ -70,10 +96,12 @@ td {
 #gallery {
     display: none;
     padding: 15px;
+    width: 100%;
+    margin: auto;
 }
 
 #gallery img {
-    max-width: 100%;
+    max-width: 50%;
 }
 
 #centerFooter {
@@ -95,18 +123,19 @@ td {
     padding: 15px;
 }
 
-#devilsteak {
+#devilsteakMobile, #devilsteakDesktop {
     box-shadow: 10px 10px;
-    position: relative;
 }
 
 #nightmare {
     margin-top: 200px;
     margin-left: -40px;
+    position: absolute;
 }
 
 #centerTextBox {
     background-color: #f3f6d0;
+    position: relative;
 }
 
 .row::after {
@@ -142,12 +171,17 @@ td {
         display: none;
     }
 
-    #devilsteak {
+    #devilsteakMobile {
         width: 60%;
+        position: relative;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: -45px;
         display: block;
+    }
+
+    #devilsteakDesktop {
+        display: none;
     }
 
     #centerTextBox {
